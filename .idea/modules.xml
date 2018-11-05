@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Book-Price-Miner.iml" filepath="$PROJECT_DIR$/.idea/modules/Book-Price-Miner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Book-Price-Miner_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Book-Price-Miner_main.iml" group="Book-Price-Miner" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Book-Price-Miner_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Book-Price-Miner_test.iml" group="Book-Price-Miner" />
+    </modules>
+  </component>
+</project>

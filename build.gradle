@@ -1,0 +1,18 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    testCompile("org.mockito:mockito-core:1.10.19")
+
+    testCompile "org.powermock:powermock-module-junit3:${'1.7.1'}"
+    testCompile "org.powermock:powermock-api-mockito2:${'1.7.1'}"
+}

@@ -1,0 +1,14 @@
+{
+  "table":"C",
+  "currency":"dolar amerykański",
+  "code":"USD",
+  "rates":
+  [
+    {
+    "no":"214/C/NBP/2018",
+    "effectiveDate":"2018-11-05",
+    "bid":3.7415,
+    "ask":3.8001
+    }
+  ]
+}

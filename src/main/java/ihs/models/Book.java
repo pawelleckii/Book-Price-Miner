@@ -3,11 +3,13 @@ package ihs.models;
 import ihs.APIdownloaders.Bookstore;
 import ihs.APIdownloaders.NBPCurrencyRateDownloader;
 
+import java.util.Comparator;
+
 /***
  * Universal model of a single book.
- * Every API Downloader has to convert data to this model.
+ * Every API Downloader converts data to this model.
  */
-public class Book {
+public class Book implements Comparable<Book>{
     private final String title;
     private final String author;
     private final String isbn13;
@@ -58,16 +60,34 @@ public class Book {
         return isbn13;
     }
 
+    public double getPriceInPLN() {
+        return priceInPLN;
+    }
+
     @Override
     public String toString() {
-        return "ihs.models.Book{" +
-                "title='" + title + '\'' +
+        return  "{'" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", isbn13='" + isbn13 + '\'' +
                 ", price=" + price + " " + currencyCode +
                 ", priceInPLN='" + priceInPLN + '\'' +
                 ", buyLink='" + buyLink + '\'' +
                 ", bookStore=" + bookStore +
-                "}\n";
+                "}";
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        return Double.compare(getPriceInPLN(), o.getPriceInPLN());
+    }
+
+    public static final Comparator<Book> Cheapest = Comparator.comparingDouble(Book::getPriceInPLN).reversed();
+
+    public String simplePrint() {
+        return title + " by " + author + " | Price: " + price + " " + currencyCode;
+    }
+
+    public String fullPrint() {
+        return title + " by " + author + " | Price: " + priceInPLN + " zl" + "\nBuy Link: " + buyLink;
     }
 }

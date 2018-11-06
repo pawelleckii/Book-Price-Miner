@@ -1,25 +1,27 @@
-package ihs.APIdownloaders;
+package ihs.APIdownloaders.bookstores;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
+import ihs.APIdownloaders.Bookstore;
+import ihs.APIdownloaders.SiteContentDownloader;
 import ihs.models.Book;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
-public class GoogleBooksDownloader extends SiteContentDownloader implements CheapestBookDownloader, BookListDownloader {
+public class GoogleBooks extends SiteContentDownloader implements CheapestBookDownloader, BookListDownloader {
 
     private static final String API_URL = "https://www.googleapis.com/books/v1/volumes?q=";
 
     @Override
-    public List<Book> downloadBookList(String userRawTitle){
+    public List<Book> downloadBookList(String rawBookTitle){
 
-        String fullURL = API_URL + urlifyTitle(userRawTitle);
+        String fullURL = API_URL + urlifyTitle(rawBookTitle);
         JsonObject rootObj = getResponseJson(fullURL);
         return getBookList(rootObj);
     }
@@ -33,7 +35,7 @@ public class GoogleBooksDownloader extends SiteContentDownloader implements Chea
         if (cheapestBook == null && bookTitle != null && !bookTitle.isEmpty()) {
             cheapestBook = getCheapestBookByTitle(bookTitle);
         }
-        return cheapestBook != null? cheapestBook : CheapestBookDownloader.DUMMY_BOOK;
+        return cheapestBook != null? cheapestBook : DUMMY_BOOK;
     }
 
     private Book getCheapestBookByISBN(String isbn13) {
@@ -44,7 +46,8 @@ public class GoogleBooksDownloader extends SiteContentDownloader implements Chea
         cheapestValidBook = books.stream()
                 .filter(b -> b.getIsbn13().equals(isbn13))
                 .filter(b -> b.getPrice() != -1.0)
-                .sorted(Comparator.comparingDouble(Book::getPrice).reversed()).findFirst();
+                .sorted()
+                .findFirst();
         return cheapestValidBook.orElse(null);
     }
 
@@ -56,20 +59,23 @@ public class GoogleBooksDownloader extends SiteContentDownloader implements Chea
         cheapestValidBook = books.stream()
                 .filter(b -> b.getTitle().equals(bookTitle))
                 .filter(b -> b.getPrice() != -1.0)
-                .sorted(Comparator.comparingDouble(Book::getPrice).reversed()).findFirst();
+                .sorted()
+                .findFirst();
         return cheapestValidBook.orElse(null);
     }
 
-
-
     private List<Book> getBookList(JsonObject rootObj) {
-        JsonArray jsonBookArray = rootObj.get("items").getAsJsonArray();
-
+        JsonArray jsonBookArray = rootObj.getAsJsonArray("items");
+        if(jsonBookArray == null){
+            return new ArrayList<>();
+        }
         List<Book> bookList = new ArrayList<>();
         for(JsonElement jsonBookInfo : jsonBookArray){
             bookList.add(getBook(jsonBookInfo));
         }
-        return bookList;
+        return bookList.stream()
+                .filter(b -> b.getPriceInPLN() != -1.0)
+                .collect(Collectors.toList());
     }
 
     private Book getBook(JsonElement jsonBookInfo) {
@@ -89,10 +95,12 @@ public class GoogleBooksDownloader extends SiteContentDownloader implements Chea
             JsonArray jsonIndustryIdentifiers = volumeInfo.getAsJsonArray("industryIdentifiers");
 
             //industryIdentifiers: {"type": String , "identifier" : String}
-            for(JsonElement identifier : jsonIndustryIdentifiers){
-                if(identifier.getAsJsonObject().get("type").getAsString().equals("ISBN_13")){
-                   isbn13 = identifier.getAsJsonObject().get("identifier").getAsString();
-                   break;
+            if(jsonIndustryIdentifiers != null) {
+                for (JsonElement identifier : jsonIndustryIdentifiers) {
+                    if (identifier.getAsJsonObject().get("type").getAsString().equals("ISBN_13")) {
+                        isbn13 = identifier.getAsJsonObject().get("identifier").getAsString();
+                        break;
+                    }
                 }
             }
 

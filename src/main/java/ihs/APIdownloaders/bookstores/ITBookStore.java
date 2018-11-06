@@ -1,18 +1,19 @@
-package ihs.APIdownloaders;
+package ihs.APIdownloaders.bookstores;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
+import ihs.APIdownloaders.Bookstore;
+import ihs.APIdownloaders.SiteContentDownloader;
 import ihs.models.Book;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ITBookStoreDownloader extends SiteContentDownloader implements CheapestBookDownloader {
+public class ITBookStore extends SiteContentDownloader implements CheapestBookDownloader {
 
     private static final String API_URL = "https://api.itbook.store/1.0/";
 
@@ -37,7 +38,8 @@ public class ITBookStoreDownloader extends SiteContentDownloader implements Chea
         cheapestValidBook = books.stream()
                 .filter(b -> b.getIsbn13().equals(isbn13))
                 .filter(b -> b.getPrice() != -1.0)
-                .sorted(Comparator.comparingDouble(Book::getPrice).reversed()).findFirst();
+                .sorted()
+                .findFirst();
         return cheapestValidBook.orElse(null);
     }
 
@@ -50,13 +52,14 @@ public class ITBookStoreDownloader extends SiteContentDownloader implements Chea
         cheapestValidBook = books.stream()
                 .filter(b -> b.getTitle().equals(bookTitle))
                 .filter(b -> b.getPrice() != -1.0)
-                .sorted(Comparator.comparingDouble(Book::getPrice).reversed()).findFirst();
+                .sorted()
+                .findFirst();
         return cheapestValidBook.orElse(null);
     }
 
 
     private List<Book> getBookList(JsonObject rootObj) {
-        if(rootObj.get("error").getAsString().equals("[books] Not found")){
+        if(rootObj == null || rootObj.get("error").getAsString().equals("[books] Not found")){
             return new ArrayList<>();
         }
         JsonArray jsonBookArray = rootObj.getAsJsonArray("books");

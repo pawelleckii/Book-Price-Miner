@@ -1,31 +1,52 @@
 package ihs;
 
-import ihs.APIdownloaders.BookListDownloader;
-import ihs.APIdownloaders.CheapestBookDownloader;
-import ihs.APIdownloaders.GoogleBooksDownloader;
-import ihs.APIdownloaders.ITBookStoreDownloader;
+import ihs.APIdownloaders.API;
 import ihs.models.Book;
 
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
+/**
+ * Main class handling user interface.
+ * For a given title downloads a list of books from database.
+ * User chooses which book from a list will be searched in bookstores.
+ */
 public class BookPriceMiner {
 
     public static void main(String[] args) {
 
-        String userRawTitle = "APIs: A Strategy Guide";
-        //String userRawTitle = "Reksio";
-        //String userRawTitle = "APIs: A Strategy Guide";
+        while(true){
+            System.out.println("Type book title:");
+            Scanner scanner = new Scanner(System.in);
+            String userRawTitle = scanner.nextLine();
+            if(userRawTitle.isEmpty()){
+                return;
+            }
 
-        GoogleBooksDownloader googleBooksDownloader = new GoogleBooksDownloader();
-        List<Book> booksFromDataBase = googleBooksDownloader.downloadBookList(userRawTitle);
-        System.out.println(booksFromDataBase.toString());
-        Book queriedBook = booksFromDataBase.get(0);
+            List<Book> booksFromDataBase = API.getBooksFromDatabase(userRawTitle);
+            if(booksFromDataBase == null || booksFromDataBase.isEmpty()){
+                System.out.println("There are no such books in database.");
+                continue;
+            }
 
-        Book cheapestGoogleBook = googleBooksDownloader.getCheapestBook(queriedBook.getTitle(), queriedBook.getIsbn13());
-        System.out.println(cheapestGoogleBook.toString());
+            for (int i = 0; i < booksFromDataBase.size(); i++) {
+                System.out.println(i+1 + ". " + booksFromDataBase.get(i).simplePrint());
+            }
 
-        CheapestBookDownloader itBookStoreDownloader = new ITBookStoreDownloader();
-        Book cheapestITStoreBook = itBookStoreDownloader.getCheapestBook(queriedBook.getTitle(), queriedBook.getIsbn13());
-        System.out.println(cheapestITStoreBook.toString());
+            int bookIndex = -1;
+            while(bookIndex < 0 || bookIndex > booksFromDataBase.size() - 1) {
+                System.out.println("Which book from the list did you mean?");
+                bookIndex = scanner.nextInt() - 1;
+            }
+            Book queriedBook = booksFromDataBase.get(bookIndex);
+
+            List<Book> cheapestBooks = API.getCheapestBookFromEachBookstore(queriedBook.getTitle(), queriedBook.getIsbn13());
+
+            if(!cheapestBooks.isEmpty()) {
+                System.out.println("List of books:\n" + cheapestBooks.stream().map(Book::fullPrint).collect(Collectors.joining("\n")));
+            } else {
+                System.out.println("There are no books for sale.");
+            }
+        }
     }
 }

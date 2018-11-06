@@ -9,7 +9,9 @@ import java.util.concurrent.TimeUnit;
 
 import static java.util.AbstractMap.SimpleEntry;
 
-
+/**
+ * Class is used for downloading currency rates form NBP API. Values are used for calculating prices of books in PLN.
+ */
 public class NBPCurrencyRateDownloader extends SiteContentDownloader {
 
     private static final String API_URL = "http://api.nbp.pl/api/exchangerates/rates/c/";
@@ -24,7 +26,7 @@ public class NBPCurrencyRateDownloader extends SiteContentDownloader {
     }
     protected NBPCurrencyRateDownloader(){}
 
-    public synchronized double getCurrencyRate(String currencyCode) {
+    public double getCurrencyRate(String currencyCode) {
         SimpleEntry<Double, Long> ret = cache.get(currencyCode);
         if(ret == null || ret.getValue() < System.currentTimeMillis()){
             //We dont have info in cache or it is too old.

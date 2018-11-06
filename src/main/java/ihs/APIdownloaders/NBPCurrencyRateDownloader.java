@@ -15,13 +15,14 @@ public class NBPCurrencyRateDownloader extends SiteContentDownloader {
     private static final String API_URL = "http://api.nbp.pl/api/exchangerates/rates/c/";
     private static final String API_SUFIX = "?format=json";
     private static final long CACHE_REFRESH_TIME = TimeUnit.HOURS.toMillis(5);
-    private Map<String, SimpleEntry<Double, Long>> cache = new HashMap<>();
+
+    private Map<String, SimpleEntry<Double, Long>> cache = new HashMap<>(); //(currencyCode , (currencyRate, timeOfNextUpdate))
     private static final NBPCurrencyRateDownloader instance = new NBPCurrencyRateDownloader();
 
     public static NBPCurrencyRateDownloader getInstance() {
         return instance;
     }
-    private NBPCurrencyRateDownloader(){}
+    protected NBPCurrencyRateDownloader(){}
 
     public synchronized double getCurrencyRate(String currencyCode) {
         SimpleEntry<Double, Long> ret = cache.get(currencyCode);

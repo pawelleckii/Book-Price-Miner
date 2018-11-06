@@ -8,7 +8,6 @@ public class NBPCurrencyRateDownloaderMock extends NBPCurrencyRateDownloader {
     public static String USD_CURR_CODE = "USD";
     public static double USD_CURR_RATE = 3.8001;
 
-
     static final String URL = "http://api.nbp.pl/api/exchangerates/rates/c/USD?format=json";
     static final String fileLocation = "src\\test\\resources\\nbp\\NbpUSD.json";
 
@@ -19,5 +18,4 @@ public class NBPCurrencyRateDownloaderMock extends NBPCurrencyRateDownloader {
         }
         throw new IllegalArgumentException();
     }
-
 }

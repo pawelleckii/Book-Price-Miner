@@ -37,7 +37,7 @@ public class ITBookStoreDownloader extends SiteContentDownloader implements Chea
         cheapestValidBook = books.stream()
                 .filter(b -> b.getIsbn13().equals(isbn13))
                 .filter(b -> b.getPrice() != -1.0)
-                .sorted(Comparator.comparingDouble(Book::getPrice)).findFirst();
+                .sorted(Comparator.comparingDouble(Book::getPrice).reversed()).findFirst();
         return cheapestValidBook.orElse(null);
     }
 
@@ -50,7 +50,7 @@ public class ITBookStoreDownloader extends SiteContentDownloader implements Chea
         cheapestValidBook = books.stream()
                 .filter(b -> b.getTitle().equals(bookTitle))
                 .filter(b -> b.getPrice() != -1.0)
-                .sorted(Comparator.comparingDouble(Book::getPrice)).findFirst();
+                .sorted(Comparator.comparingDouble(Book::getPrice).reversed()).findFirst();
         return cheapestValidBook.orElse(null);
     }
 

@@ -27,6 +27,5 @@ public class BookPriceMiner {
         CheapestBookDownloader itBookStoreDownloader = new ITBookStoreDownloader();
         Book cheapestITStoreBook = itBookStoreDownloader.getCheapestBook(queriedBook.getTitle(), queriedBook.getIsbn13());
         System.out.println(cheapestITStoreBook.toString());
-        
     }
 }

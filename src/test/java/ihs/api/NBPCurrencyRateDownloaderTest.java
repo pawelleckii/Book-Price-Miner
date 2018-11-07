@@ -14,5 +14,4 @@ public class NBPCurrencyRateDownloaderTest {
         double response = nbpDownloader.getCurrencyRate(NBPCurrencyRateDownloaderMock.USD_CURR_CODE);
         assert NBPCurrencyRateDownloaderMock.USD_CURR_RATE == response;
     }
-
 }

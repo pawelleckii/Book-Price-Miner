@@ -8,7 +8,7 @@ The only two methods in class 'API' that can be used for external frontend are:
 
 **List[Book] getBooksFromDatabase(String userPhrase)**
   
-Downloads list of books in database to let user choose one that he meant by typing **userPhrase**.
+Downloads list of books in database to let user choose the one that he meant by providing **userPhrase**.
 
 **List[Book] getCheapestBookFromEachBookstore(String bookTitle, String isbn13)**
   

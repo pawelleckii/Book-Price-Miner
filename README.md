@@ -24,6 +24,12 @@ Downloads List of cheapest Book with buy links from each bookstore sorted by pri
 * Add new instance of created class to list of bookstores in 'ihs.api.API'
 * Add a new instance in Enum 'Bookstore'
 
+## Changing database server
+*The application is now using Google Books database. To change it user has to:*
+* Create a new class in package ihs.api.bookstores 
+(created class has to implement BookListDownloader interface)
+* Change 'database' field in class 'ihs.api.API' to new instance of created class.
+
 ## Running the application
 The application has been provided with sample implementation.
 To see how it works, user has to run ihs.api.BookPriceMiner class provided with main method.

@@ -31,7 +31,7 @@ public class GoogleBooks extends SiteContentDownloader implements CheapestBookDo
     }
 
     @Override
-    public Book getCheapestBook(String bookTitle, String isbn13) {
+    public Book getCheapestBook(String isbn13, String bookTitle) {
         Book cheapestBook = null;
         if (isbn13 != null && !isbn13.isEmpty()) {
             cheapestBook = getCheapestBookByISBN(isbn13);
@@ -46,8 +46,7 @@ public class GoogleBooks extends SiteContentDownloader implements CheapestBookDo
         String fullURL = API_URL + "isbn=" + isbn13;
         JsonObject rootObj = getResponseJson(fullURL);
         List<Book> books = getBookList(rootObj);
-        Optional<Book> cheapestValidBook;
-        cheapestValidBook = books.stream()
+        Optional<Book> cheapestValidBook = books.stream()
                 .filter(b -> b.getIsbn13().equals(isbn13))
                 .filter(b -> b.getPrice() != -1.0)
                 .sorted()
@@ -59,8 +58,7 @@ public class GoogleBooks extends SiteContentDownloader implements CheapestBookDo
         String fullURL = API_URL + urlifyTitle(bookTitle);
         JsonObject rootObj = getResponseJson(fullURL);
         List<Book> books = getBookList(rootObj);
-        Optional<Book> cheapestValidBook;
-        cheapestValidBook = books.stream()
+        Optional<Book> cheapestValidBook = books.stream()
                 .filter(b -> b.getTitle().equals(bookTitle))
                 .filter(b -> b.getPrice() != -1.0)
                 .sorted()

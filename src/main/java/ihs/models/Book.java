@@ -15,7 +15,7 @@ public class Book implements Comparable<Book>{
     private final double priceInPLN;
     private final String currencyCode;
     private final String buyLink;
-    private final  Bookstore bookStore;
+    private final Bookstore bookStore;
 
     public Book(Bookstore bookStore, String title, String author, String isbn13, double price, String currencyCode, String buyLink) {
         this.bookStore = bookStore;
@@ -28,15 +28,15 @@ public class Book implements Comparable<Book>{
         this.priceInPLN = priceToPLN();
     }
 
-    public Book(Bookstore bookStore) {
-        this(bookStore, "", "", "", -1.0, "", "");
+    public Book() {
+        this(null, "", "", "", -1.0, "", "");
     }
 
     private double priceToPLN() {
-        if("PLN".equals(currencyCode)){
+        if("PLN".equals(currencyCode) || price <= 0){
             return price;
         }
-        if(currencyCode != null && !currencyCode.isEmpty() && !currencyCode.equals("PLN")){
+        if(currencyCode != null && !currencyCode.isEmpty()){
             NBPCurrencyRateDownloader downloader = NBPCurrencyRateDownloader.getInstance();
             double currencyRate = downloader.getCurrencyRate(currencyCode);
             if(currencyRate != -1.0){

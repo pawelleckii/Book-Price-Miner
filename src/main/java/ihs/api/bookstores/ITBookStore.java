@@ -22,7 +22,7 @@ public class ITBookStore extends SiteContentDownloader implements CheapestBookDo
     private static final String API_URL = "https://api.itbook.store/1.0/";
 
     @Override
-    public Book getCheapestBook(String bookTitle, String isbn13) {
+    public Book getCheapestBook(String isbn13, String bookTitle) {
         Book cheapestBook = null;
         if(isbn13 != null && !isbn13.isEmpty()){
             cheapestBook = getCheapestBookByISBN(isbn13);
@@ -37,9 +37,7 @@ public class ITBookStore extends SiteContentDownloader implements CheapestBookDo
         String fullURL = API_URL + "books/" + isbn13;
         JsonObject rootObj = getResponseJson(fullURL);
         List<Book> books = getBookList(rootObj);
-        Optional<Book> cheapestValidBook;
-
-        cheapestValidBook = books.stream()
+        Optional<Book> cheapestValidBook = books.stream()
                 .filter(b -> b.getIsbn13().equals(isbn13))
                 .filter(b -> b.getPrice() != -1.0)
                 .sorted()
@@ -51,9 +49,7 @@ public class ITBookStore extends SiteContentDownloader implements CheapestBookDo
         String fullURL = API_URL + "search/" + urlifyTitle(bookTitle);
         JsonObject rootObj = getResponseJson(fullURL);
         List<Book> books = getBookList(rootObj);
-        Optional<Book> cheapestValidBook;
-
-        cheapestValidBook = books.stream()
+        Optional<Book> cheapestValidBook = books.stream()
                 .filter(b -> b.getTitle().equals(bookTitle))
                 .filter(b -> b.getPrice() != -1.0)
                 .sorted()

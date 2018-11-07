@@ -10,7 +10,7 @@ public class GoogleBooksTest {
 
     @Test
     public void getCheapestBook() throws Exception{
-        Book book = google.getCheapestBook(GoogleBooksMock.GET_CHEAPEST_TITLE, GoogleBooksMock.GET_CHEAPEST_ISBN);
+        Book book = google.getCheapestBook(GoogleBooksMock.GET_CHEAPEST_ISBN, GoogleBooksMock.GET_CHEAPEST_TITLE);
         Assert.assertEquals(GoogleBooksMock.EXPECTED_BOOK, book);
     }
 

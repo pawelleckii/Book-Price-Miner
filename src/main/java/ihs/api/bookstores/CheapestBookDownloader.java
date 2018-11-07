@@ -11,7 +11,7 @@ public interface CheapestBookDownloader {
      * @param bookTitle
      * @return the cheapest book found in bookstore API. Return DUMMY_BOOK if book was not found.
      */
-    Book getCheapestBook(String bookTitle, String isbn13);
+    Book getCheapestBook(String isbn13, String bookTitle);
 
-    Book DUMMY_BOOK = new Book(null);
+    Book DUMMY_BOOK = new Book();
 }

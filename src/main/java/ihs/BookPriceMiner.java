@@ -40,7 +40,7 @@ public class BookPriceMiner {
             int bookIndex = scanBookIndex(scanner, booksFromDataBase);
             Book queriedBook = booksFromDataBase.get(bookIndex);
 
-            List<Book> cheapestBooks = API.getCheapestBookFromEachBookstore(queriedBook.getTitle(), queriedBook.getIsbn13());
+            List<Book> cheapestBooks = API.getCheapestBookFromEachBookstore(queriedBook.getIsbn13(), queriedBook.getTitle());
 
             if(!cheapestBooks.isEmpty()) {
                 System.out.println("\n________________");

@@ -10,7 +10,7 @@ public class ITBookStoreTest {
 
     @Test
     public void getCheapestBook() throws Exception {
-        Book book = itBookStore.getCheapestBook(ITBookStoreMock.GET_CHEAPEST_TITLE, ITBookStoreMock.GET_CHEAPEST_ISBN);
+        Book book = itBookStore.getCheapestBook(ITBookStoreMock.GET_CHEAPEST_ISBN, ITBookStoreMock.GET_CHEAPEST_TITLE);
         Assert.assertEquals(ITBookStoreMock.EXPECTED_BOOK, book);
     }
 }

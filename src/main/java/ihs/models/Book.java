@@ -9,8 +9,8 @@ import ihs.api.NBPCurrencyRateDownloader;
  */
 public class Book implements Comparable<Book>{
     private final String title;
-    private final String author;
     private final String isbn13;
+    private final String author;
     private final double price;
     private final double priceInPLN;
     private final String currencyCode;
@@ -88,11 +88,11 @@ public class Book implements Comparable<Book>{
         {
             return bookStore.getName() + ":\n'" + "No such book.";
         }
-        String auth = "";
-        if(author != null && !author.isEmpty()){
-            auth = " by " + this.author;
+        String auth = this.author;
+        if(author == null || author.isEmpty()){
+            auth = "unknown author";
         }
-        return bookStore.getName() + ":\n'" + title + "'" + auth + " | Price: " + String.format("%.2f", priceInPLN) + " zl" + "\nBuy Link: " + buyLink;
+        return bookStore.getName() + ":\n'" + title + "' by " + auth + " | Price: " + String.format("%.2f", priceInPLN) + " zl" + "\nBuy Link: " + buyLink;
     }
 
     @Override

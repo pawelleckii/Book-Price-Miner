@@ -13,6 +13,10 @@ import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Class for connecting to 'ITBook.Store' API.
+ * Can be used for downloading the cheapest book for a given book title and/or ISBN.
+ */
 public class ITBookStore extends SiteContentDownloader implements CheapestBookDownloader {
 
     private static final String API_URL = "https://api.itbook.store/1.0/";

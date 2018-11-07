@@ -11,7 +11,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- * Class for downloading site content and returning it in JsonObject.
+ * Class for downloading GET content and returning it in JsonObject.
  * Every api downloader extends it.
  */
 public class SiteContentDownloader {

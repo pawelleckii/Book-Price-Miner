@@ -11,7 +11,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Class for handling //TODO
+ * Main app engine. Class for handling connections to every bookstore API.
+ * Field 'database' contains a class used for downloading book list from which user chooses book to search in bookstores.
+ * Field 'bookStoreDownloaders' contains a list of bookstore API classes that will be used to find the cheapest book.
  */
 public class API {
 

@@ -15,8 +15,8 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 /**
- * Class for connecting to Google Books API.
- * Can be used for downloading whole list by user phrase or
+ * Class for connecting to 'Google Books' API.
+ * Can be used for downloading list of books from database by user phrase or downloading the cheapest book for a given book title and/or ISBN.
  */
 public class GoogleBooks extends SiteContentDownloader implements CheapestBookDownloader, BookListDownloader {
 

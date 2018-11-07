@@ -1,6 +1,5 @@
-package ihs.api;
+package ihs.api.bookstores;
 
-import ihs.api.bookstores.ITBookStore;
 import ihs.models.Book;
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,9 +1,7 @@
-package ihs.api;
+package ihs.api.bookstores;
 
-import ihs.api.bookstores.GoogleBooks;
 import ihs.models.Book;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class GoogleBooksTest {

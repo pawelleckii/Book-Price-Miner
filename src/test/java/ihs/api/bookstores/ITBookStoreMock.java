@@ -1,7 +1,8 @@
-package ihs.api;
+package ihs.api.bookstores;
 
 import com.google.gson.JsonObject;
 import ihs.TestUtils;
+import ihs.api.Bookstore;
 import ihs.api.bookstores.ITBookStore;
 import ihs.models.Book;
 

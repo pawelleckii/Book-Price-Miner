@@ -18,7 +18,7 @@ Downloads list of books in database to let user choose the one that he meant by 
 Downloads List of cheapest Book with buy links from each bookstore sorted by price to show on the screen.
   
 ## Adding a new bookstore API
-*To add a new bookstore API, developer has to make three simple steps:*
+*To add a new bookstore API, developer has to take three simple steps:*
 * Create a new class handling this bookstore API in package ihs.api.bookstores 
 (created class has to implement CheapestBookDownloader interface)
 * Add new instance of created class to list of bookstores in 'ihs.api.API'

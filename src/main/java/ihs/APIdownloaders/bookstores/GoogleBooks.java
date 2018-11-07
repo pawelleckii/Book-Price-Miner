@@ -14,14 +14,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
+/**
+ * Class for connecting to Google Books API.
+ * Can be used for downloading whole list by user phrase or
+ */
 public class GoogleBooks extends SiteContentDownloader implements CheapestBookDownloader, BookListDownloader {
 
     private static final String API_URL = "https://www.googleapis.com/books/v1/volumes?q=";
 
     @Override
-    public List<Book> downloadBookList(String rawBookTitle){
+    public List<Book> downloadBookList(String userPhrase){
 
-        String fullURL = API_URL + urlifyTitle(rawBookTitle);
+        String fullURL = API_URL + urlifyTitle(userPhrase);
         JsonObject rootObj = getResponseJson(fullURL);
         return getBookList(rootObj);
     }

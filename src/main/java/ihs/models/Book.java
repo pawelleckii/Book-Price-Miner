@@ -84,10 +84,14 @@ public class Book implements Comparable<Book>{
     public static final Comparator<Book> Cheapest = Comparator.comparingDouble(Book::getPriceInPLN).reversed();
 
     public String simplePrint() {
-        return title + " by " + author + " | Price: " + price + " " + currencyCode;
+        return "'" + title + "' by " + author + " | Price: " + price + " " + currencyCode;
     }
 
     public String fullPrint() {
-        return title + " by " + author + " | Price: " + priceInPLN + " zl" + "\nBuy Link: " + buyLink;
+        if(title == null || title.isEmpty())
+        {
+            return bookStore.getName() + ":\n'" + "No such book.";
+        }
+        return bookStore.getName() + ":\n'" + title + "' by " + author + " | Price: " + String.format("%.2f", priceInPLN) + " zl" + "\nBuy Link: " + buyLink;
     }
 }

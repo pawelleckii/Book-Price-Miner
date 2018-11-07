@@ -57,7 +57,6 @@ public class ITBookStore extends SiteContentDownloader implements CheapestBookDo
         return cheapestValidBook.orElse(null);
     }
 
-
     private List<Book> getBookList(JsonObject rootObj) {
         if(rootObj == null || rootObj.get("error").getAsString().equals("[books] Not found")){
             return new ArrayList<>();

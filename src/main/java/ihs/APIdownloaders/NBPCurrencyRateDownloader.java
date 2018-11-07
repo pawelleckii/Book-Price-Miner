@@ -10,7 +10,8 @@ import java.util.concurrent.TimeUnit;
 import static java.util.AbstractMap.SimpleEntry;
 
 /**
- * Class is used for downloading currency rates form NBP API. Values are used for calculating prices of books in PLN.
+ * Class is used for downloading currency rates form NBP API.
+ * Values are used for calculating prices of books in PLN.
  */
 public class NBPCurrencyRateDownloader extends SiteContentDownloader {
 

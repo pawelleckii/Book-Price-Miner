@@ -6,6 +6,7 @@ public interface CheapestBookDownloader {
 
     /**
      * Interface implemented by every bookstore class. Searches for the cheapest book in bookstore.
+     * Searches bookstore database by ISBN and/or book title.
      * @param bookTitle
      * @param isbn13 ISBN book number
      * @return the cheapest book found in bookstore API. Return DUMMY_BOOK if book was not found.

@@ -7,15 +7,17 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Main class handling user interface.
+ * Main class for handling user interface.
  * For a given title downloads a list of books from database.
  * User chooses which book from a list will be searched in bookstores.
+ * Returns a list of cheapest books in each bookstore sorting it by price converted to PLN.
  */
 public class BookPriceMiner {
 
     public static void main(String[] args) {
 
         while(true){
+            System.out.println("\n________________");
             System.out.println("Type book title:");
             Scanner scanner = new Scanner(System.in);
             String userRawTitle = scanner.nextLine();
@@ -35,7 +37,7 @@ public class BookPriceMiner {
 
             int bookIndex = -1;
             while(bookIndex < 0 || bookIndex > booksFromDataBase.size() - 1) {
-                System.out.println("Which book from the list did you mean?");
+                System.out.println("\nWhich book from the list did you mean?");
                 bookIndex = scanner.nextInt() - 1;
             }
             Book queriedBook = booksFromDataBase.get(bookIndex);
@@ -43,7 +45,8 @@ public class BookPriceMiner {
             List<Book> cheapestBooks = API.getCheapestBookFromEachBookstore(queriedBook.getTitle(), queriedBook.getIsbn13());
 
             if(!cheapestBooks.isEmpty()) {
-                System.out.println("List of books:\n" + cheapestBooks.stream().map(Book::fullPrint).collect(Collectors.joining("\n")));
+                System.out.println("\n________________");
+                System.out.println("Cheapest books:\n\n" + cheapestBooks.stream().map(Book::fullPrint).collect(Collectors.joining("\n\n")));
             } else {
                 System.out.println("There are no books for sale.");
             }

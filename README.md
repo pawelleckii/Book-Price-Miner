@@ -1,7 +1,7 @@
 # Book-Price-Miner
 The application downloads book sale information for a given title from various online bookstores and shows the cheapest one with a buy link.
 
-## Using the app with external frontend
+## External frontend
 The application is ready to be used with external frontend engine by using only class **ihs.api.API**.
 
 The only two methods in class 'API' that can be used for external frontend are:

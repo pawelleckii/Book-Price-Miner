@@ -5,7 +5,7 @@ The application downloads book sale information for a given title from various o
 * Application concurrently searches bookstores and shows a list of the cheapest books from every bookstore sorted by price.
 
 ## External frontend
-The application is ready to be used with external frontend engine by using only class **ihs.api.API**.
+The application is ready to be used with external frontend engine by only using class **ihs.api.API**.
 
 The only two methods in class 'API' that can be used for external frontend are:
 

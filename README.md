@@ -26,4 +26,4 @@ Downloads List of cheapest Book with buy links from each bookstore sorted by pri
 
 ## Running the application
 The application has been provided with sample implementation.
-To see how it works, user has to run ihs.api.BookPriceMiner class.
+To see how it works, user has to run ihs.api.BookPriceMiner class provided with main method.

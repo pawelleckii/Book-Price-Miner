@@ -1,9 +1,7 @@
 package ihs.models;
 
-import ihs.APIdownloaders.Bookstore;
-import ihs.APIdownloaders.NBPCurrencyRateDownloader;
-
-import java.util.Comparator;
+import ihs.api.Bookstore;
+import ihs.api.NBPCurrencyRateDownloader;
 
 /***
  * Universal model of a single book.
@@ -81,8 +79,6 @@ public class Book implements Comparable<Book>{
         return Double.compare(getPriceInPLN(), o.getPriceInPLN());
     }
 
-    public static final Comparator<Book> Cheapest = Comparator.comparingDouble(Book::getPriceInPLN).reversed();
-
     public String simplePrint() {
         return "'" + title + "' by " + author + " | Price: " + price + " " + currencyCode;
     }
@@ -92,6 +88,28 @@ public class Book implements Comparable<Book>{
         {
             return bookStore.getName() + ":\n'" + "No such book.";
         }
-        return bookStore.getName() + ":\n'" + title + "' by " + author + " | Price: " + String.format("%.2f", priceInPLN) + " zl" + "\nBuy Link: " + buyLink;
+        String auth = "";
+        if(author != null && !author.isEmpty()){
+            auth = " by " + this.author;
+        }
+        return bookStore.getName() + ":\n'" + title + "'" + auth + " | Price: " + String.format("%.2f", priceInPLN) + " zl" + "\nBuy Link: " + buyLink;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Book book = (Book) o;
+
+        if (Double.compare(book.price, price) != 0) return false;
+        if (Double.compare(book.priceInPLN, priceInPLN) != 0) return false;
+        if (title != null ? !title.equals(book.title) : book.title != null) return false;
+        if (author != null ? !author.equals(book.author) : book.author != null) return false;
+        if (isbn13 != null ? !isbn13.equals(book.isbn13) : book.isbn13 != null) return false;
+        if (currencyCode != null ? !currencyCode.equals(book.currencyCode) : book.currencyCode != null) return false;
+        if (buyLink != null ? !buyLink.equals(book.buyLink) : book.buyLink != null) return false;
+        return bookStore == book.bookStore;
+    }
+
 }

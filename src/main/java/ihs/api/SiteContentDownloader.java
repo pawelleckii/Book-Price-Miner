@@ -1,4 +1,4 @@
-package ihs.APIdownloaders;
+package ihs.api;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;

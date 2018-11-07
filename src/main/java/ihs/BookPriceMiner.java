@@ -1,6 +1,6 @@
 package ihs;
 
-import ihs.APIdownloaders.API;
+import ihs.api.API;
 import ihs.models.Book;
 
 import java.util.*;
@@ -20,12 +20,12 @@ public class BookPriceMiner {
             System.out.println("\n________________");
             System.out.println("Type book title:");
             Scanner scanner = new Scanner(System.in);
-            String userRawTitle = scanner.nextLine();
-            if(userRawTitle.isEmpty()){
+            String userPhrase = scanner.nextLine();
+            if(userPhrase.isEmpty()){
                 return;
             }
 
-            List<Book> booksFromDataBase = API.getBooksFromDatabase(userRawTitle);
+            List<Book> booksFromDataBase = API.getBooksFromDatabase(userPhrase);
             if(booksFromDataBase == null || booksFromDataBase.isEmpty()){
                 System.out.println("There are no such books in database.");
                 continue;

@@ -8,7 +8,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class TestingUtils {
+public class TestUtils {
 
     public static JsonObject readJsonObject(String fileLocation) {
         try{

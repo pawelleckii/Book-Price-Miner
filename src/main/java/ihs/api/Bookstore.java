@@ -1,4 +1,4 @@
-package ihs.APIdownloaders;
+package ihs.api;
 
 /**
  * Enum contains every served bookstore API.
@@ -6,7 +6,6 @@ package ihs.APIdownloaders;
 public enum Bookstore {
     GOOGLE_BOOKS("Google Books"),
     IT_BOOK_STORE("ITbook.store");
-
 
     private String name;
 

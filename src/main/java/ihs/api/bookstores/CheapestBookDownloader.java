@@ -1,4 +1,4 @@
-package ihs.APIdownloaders.bookstores;
+package ihs.api.bookstores;
 
 import ihs.models.Book;
 

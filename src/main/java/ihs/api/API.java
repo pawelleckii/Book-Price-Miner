@@ -1,9 +1,9 @@
-package ihs.APIdownloaders;
+package ihs.api;
 
-import ihs.APIdownloaders.bookstores.BookListDownloader;
-import ihs.APIdownloaders.bookstores.CheapestBookDownloader;
-import ihs.APIdownloaders.bookstores.GoogleBooks;
-import ihs.APIdownloaders.bookstores.ITBookStore;
+import ihs.api.bookstores.BookListDownloader;
+import ihs.api.bookstores.CheapestBookDownloader;
+import ihs.api.bookstores.GoogleBooks;
+import ihs.api.bookstores.ITBookStore;
 import ihs.models.Book;
 
 import java.util.Arrays;

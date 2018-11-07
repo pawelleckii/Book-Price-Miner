@@ -1,4 +1,4 @@
-package ihs.APIdownloaders;
+package ihs.api;
 
 import org.junit.Before;
 import org.junit.Test;

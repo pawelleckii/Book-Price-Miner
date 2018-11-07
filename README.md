@@ -6,10 +6,12 @@ The application is ready to be used with external frontend engine by using only 
 
 The only two methods in class 'API' that can be used for external frontend are:
 
-**List<Book> getBooksFromDatabase(String userPhrase)**
+**List[Book] getBooksFromDatabase(String userPhrase)**
+  
 Downloads list of books in database to let user choose one that he meant by typing **userPhrase**.
 
-**List<Book> getCheapestBookFromEachBookstore(String bookTitle, String isbn13)**
+**List[Book] getCheapestBookFromEachBookstore(String bookTitle, String isbn13)**
+  
 Downloads List of cheapest Book with buy links from each bookstore sorted by price to show on the screen.
   
 ## Adding a new bookstore API

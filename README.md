@@ -19,7 +19,7 @@ Downloads List of cheapest Book with buy links from each bookstore sorted by pri
   
 ## Adding a new bookstore API
 *To add a new bookstore API, developer has to take three simple steps:*
-* Create a new class handling this bookstore API in package ihs.api.bookstores 
+* Create a new class handling new bookstore API in package ihs.api.bookstores 
 (created class has to implement CheapestBookDownloader interface)
 * Add new instance of created class to list of bookstores in 'ihs.api.API'
 * Add a new instance in Enum 'Bookstore'

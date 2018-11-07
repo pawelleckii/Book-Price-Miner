@@ -1,5 +1,8 @@
 # Book-Price-Miner
 The application downloads book sale information for a given title from various online bookstores and shows the cheapest one with a buy link.
+* User types phrase to be found in database (for now using Google Books database).
+* User chooses book he meant from a list of books.
+* Application shows a list of cheapest books in every bookstore sorted by price.
 
 ## External frontend
 The application is ready to be used with external frontend engine by using only class **ihs.api.API**.

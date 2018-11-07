@@ -6,8 +6,8 @@ The application is ready to be used with external frontend technology.
 Main engine class is **ihs.api.API**
 
 Two methods in class 'API' that can be used in external frontend are:
-**List<Book> getBooksFromDatabase(String userPhrase)**
+**List<<Book>> getBooksFromDatabase(String userPhrase)**
 Downloads list of books in database to let user choose one that he meant by typing **userPhrase**.
 
-**List<Book> getCheapestBookFromEachBookstore(String bookTitle, String isbn13)**
+**List<<Book>> getCheapestBookFromEachBookstore(String bookTitle, String isbn13)**
   

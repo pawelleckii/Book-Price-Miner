@@ -1,5 +1,5 @@
-# Book-Price-Miner
-The application downloads book sale information for a given title from various online bookstores and shows the cheapest one with a buy link.
+# Book Price Miner
+Book price comparator. The application downloads book sale information for a given title from various online bookstores and shows the cheapest ones with a buy links.
 * User types phrase to be found in database (for now using Google Books database).
 * User chooses book he meant from a list of books.
 * Application concurrently searches bookstores and shows a list of the cheapest books from every bookstore sorted by price.

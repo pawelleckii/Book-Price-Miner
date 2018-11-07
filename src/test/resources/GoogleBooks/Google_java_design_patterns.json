@@ -1,0 +1,758 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 31,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "uq9PCwAAQBAJ",
+   "etag": "uin8FfJRxMg",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/uq9PCwAAQBAJ",
+   "volumeInfo": {
+    "title": "Java Design Patterns",
+    "authors": [
+     "Vaskaran Sarcar"
+    ],
+    "publisher": "Apress",
+    "publishedDate": "2015-12-31",
+    "description": "Learn how to implement design patterns in Java: each pattern in Java Design Patterns is a complete implementation and the output is generated using Eclipse, making the code accessible to all. The examples are chosen so you will be able to absorb the core concepts easily and quickly. This book presents the topic of design patterns in Java in such a way that anyone can grasp the idea. By giving easy to follow examples, you will understand the concepts with increasing depth. The examples presented are straightforward and the topic is presented in a concise manner. Key features of the book: Each of the 23 patterns is described with straightforward Java code. There is no need to know advanced concepts of Java to use this book. Each of the concepts is connected with a real world example and a computer world example. The book uses Eclipse IDE to generate the output because it is the most popular IDE in this field. This is a practitioner's book on design patterns in Java. Design patterns are a popular topic in software development. A design pattern is a common, well-described solution to a common software problem. There is a lot of written material available on design patterns, but scattered and not in one single reference source. Also, many of these examples are unnecessarily big and complex.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781484218020"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1484218027"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 171,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.6.5.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=uq9PCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=uq9PCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=uq9PCwAAQBAJ&printsec=frontcover&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=1&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=uq9PCwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-uq9PCwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 120.42,
+     "currencyCode": "PLN"
+    },
+    "retailPrice": {
+     "amount": 84.29,
+     "currencyCode": "PLN"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=uq9PCwAAQBAJ&rdid=book-uq9PCwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.2042E8,
+       "currencyCode": "PLN"
+      },
+      "retailPrice": {
+       "amountInMicros": 8.429E7,
+       "currencyCode": "PLN"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Design_Patterns-sample-epub.acsm?id=uq9PCwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Java_Design_Patterns-sample-pdf.acsm?id=uq9PCwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=uq9PCwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "The book uses Eclipse IDE to generate the output because it is the most popular IDE in this field. This is a practitioner&#39;s book on design patterns in Java. Design patterns are a popular topic in software development."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "ajlMjwEACAAJ",
+   "etag": "mZjMXDTAJYM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/ajlMjwEACAAJ",
+   "volumeInfo": {
+    "title": "Design Patterns in C#",
+    "subtitle": "Computer Science Interview Series(Colored Edition)",
+    "authors": [
+     "Vaskaran Sarcar"
+    ],
+    "publisher": "Createspace Independent Publishing Platform",
+    "publishedDate": "2016-01-17",
+    "description": "This book will focus on the design patterns in C#.The knowledge and efficiency of a programmer is often judged by these concepts in most of the interviews.The author has used his vast experience to choose the most simple examples to help readers for the easy understanding of the topic.His focus here is totally on design and not on the programming logic.Though C# is used as the programming language but if the reader is familiar with any other popular language like C++,Java etc,he/she can also get the concepts very easily.Each of the chapter consists of the core concept, at least one real life example,one computer world example, one complete implementation for each of the patterns with corresponding outputs .The author tried to avoid unnecessary discussion on each topic and made them concise.He has directly entered each of the topic with an easy to remember implementation.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1523436557"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781523436552"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 182,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=ajlMjwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=ajlMjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=ajlMjwEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=ajlMjwEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Design_Patterns_in_C.html?hl=&id=ajlMjwEACAAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=ajlMjwEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "In this edition , you&#39;ll see some additional design patterns and we will discuss about some important concepts like Anti Patterns, Memory leaks etc. You will be able to preorder the book shortly."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "UNhCDwAAQBAJ",
+   "etag": "2ZyHVsfwIdQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/UNhCDwAAQBAJ",
+   "volumeInfo": {
+    "title": "Interactive C#",
+    "subtitle": "Fundamentals, Core Concepts and Patterns",
+    "authors": [
+     "Vaskaran Sarcar"
+    ],
+    "publisher": "Apress",
+    "publishedDate": "2017-12-12",
+    "description": "Discover object-oriented programming with core concepts of C# in this unique tutorial. The book consists of four major sections which cover 15 core topics - nine of them are dedicated to object-oriented programming, five of them are dedicated to advanced concepts of C#, and one of them is dedicated to design patterns, with coverage of three Gang of Four design patterns with C# implementations. Finally, Interactive C# contains an FAQ section to cover all of these topics. This book uniquely presents a two-way discussion between a teacher and students. So, with this book you will have the feel of learning C# in a classroom environment or with your private tutor. Your teacher will discuss the problems/topics and ask you questions; at the same time, counter questions are provided to clarify points where necessary. What You Will Learn Become proficient in object-oriented programming Remake yourself as a great C# programmer Test your skills in C# fundamentals Use Visual Studio to write, compile and execute your code Who This Book Is For Programmers who want to understand the concepts and implementation of object-oriented programming in C#.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781484233399"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1484233395"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 494,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=UNhCDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=UNhCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=UNhCDwAAQBAJ&printsec=frontcover&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=3&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=UNhCDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-UNhCDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 132.68,
+     "currencyCode": "PLN"
+    },
+    "retailPrice": {
+     "amount": 92.88,
+     "currencyCode": "PLN"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=UNhCDwAAQBAJ&rdid=book-UNhCDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.3268E8,
+       "currencyCode": "PLN"
+      },
+      "retailPrice": {
+       "amountInMicros": 9.288E7,
+       "currencyCode": "PLN"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Interactive_C-sample-epub.acsm?id=UNhCDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Interactive_C-sample-pdf.acsm?id=UNhCDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=UNhCDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "This book uniquely presents a two-way discussion between a teacher and students. So, with this book you will have the feel of learning C# in a classroom environment or with your private tutor."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "6QcQuAEACAAJ",
+   "etag": "VT+u5DrQ9Xg",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/6QcQuAEACAAJ",
+   "volumeInfo": {
+    "title": "Java Design Patterns A Tour of 23 Gang of Four Design Patterns in Java",
+    "authors": [
+     "Vaskaran Sarcar"
+    ],
+    "publishedDate": "2016",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "OCLC:1026435870"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=6QcQuAEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=4&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=6QcQuAEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Java_Design_Patterns_A_Tour_of_23_Gang_o.html?hl=&id=6QcQuAEACAAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=6QcQuAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "5sfDDQAAQBAJ",
+   "etag": "p4r4wAODiws",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/5sfDDQAAQBAJ",
+   "volumeInfo": {
+    "title": "Interactive Object Oriented Programming in Java",
+    "subtitle": "Learn and Test Your Skills",
+    "authors": [
+     "Vaskaran Sarcar"
+    ],
+    "publisher": "Apress",
+    "publishedDate": "2016-12-19",
+    "description": "Discover object oriented programming with Java in this unique tutorial. This book uses Java and Eclipse to write and generate output for examples in topics such as classes, interfaces, overloading, and overriding. Interactive Object Oriented Programming in Java uniquely presents its material in a dialogue with the reader to encourage thinking and experimentation. Later chapters cover further Java programming concepts, such as abstract classes, packages, and exception handling. At each stage you’ll be challenged by the author to help you absorb the information and become a proficient Java programmer. Additionally, each chapter contains simple assignments to encourage you and boost your confidence level. What You Will Learn Become proficient in object oriented programming Test your skills in the basics of Java Develop as a Java programmer Use the Eclipse IDE to write your code Who This Book Is For Software developers and software testers.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781484225448"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1484225449"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 211,
+    "printType": "BOOK",
+    "categories": [
+     "Computers"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=5sfDDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=5sfDDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=5sfDDQAAQBAJ&printsec=frontcover&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=5&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=5sfDDQAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-5sfDDQAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 122.06,
+     "currencyCode": "PLN"
+    },
+    "retailPrice": {
+     "amount": 85.44,
+     "currencyCode": "PLN"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=5sfDDQAAQBAJ&rdid=book-5sfDDQAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.2206E8,
+       "currencyCode": "PLN"
+      },
+      "retailPrice": {
+       "amountInMicros": 8.544E7,
+       "currencyCode": "PLN"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Interactive_Object_Oriented_Programming-sample-epub.acsm?id=5sfDDQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.pl/books/download/Interactive_Object_Oriented_Programming-sample-pdf.acsm?id=5sfDDQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=5sfDDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Discover object oriented programming with Java in this unique tutorial. This book uses Java and Eclipse to write and generate output for examples in topics such as classes, interfaces, overloading, and overriding."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "gRritAEACAAJ",
+   "etag": "nph9S+u8I9g",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/gRritAEACAAJ",
+   "volumeInfo": {
+    "title": "Interactive Object-Oriented Programming in C#",
+    "authors": [
+     "Vaskaran Sarcar"
+    ],
+    "publisher": "Createspace Independent Publishing Platform",
+    "publishedDate": "2017-08-07",
+    "description": "Announcement-Thanks for your interest in Interactive Object-Oriented Programming in C# and making this book as \"No.1 New Release.\" You motivated us to do some further modification and fine-tune this work. The heart of the book is Part-1 which focuses on Object-Oriented programming. But we are covering much more in this book and so, based on the readers feedback, we are bringing the upcoming and fine-tuned version of the book as \"Interactive C#\" very soon. You will be able to preorder the book shortly. So, stay tuned !!Are you afraid of programming? Or, perhaps you experimented with some other programming languages and now want learn C#? Or, you want to learn fast but do not want to miss the key concepts? If the answer is yes for any of these questions, then you are at the right place. 1. The book consists of four major sections which cover 15 core topics - 9 of them are dedicated to object oriented programming, 5 of them are dedicated to advanced concepts of C#,1 of them is dedicated to design patterns which covers 3 Gang of Four design patterns with C# implementations. Finally, you will get a FAQ section to cover all of these. 2. Why do we put so much emphasis on the word \"core\"? It is because, world is changing and new features will keep evolving but core concepts are evergreen. All new features are built on top of those. If you have a strong foundation, you can adopt the upcoming features quickly because you can understand the reason behind those changes. So, the book focuses on core topics in depth but does not try to cover \"a-z\" in C# at the same time. 3. This book is interactive . With it, you can feel that you are learning in a classroom environment where your teacher is discussing some topics and asking you questions. At the same time, you can clear your doubts by asking counter questions. It is very much important because many students cannot ask questions in an open forum due to many psychological factors. If you are dedicated to this subject and repeatedly think about these Q&A sessions, you can remake yourself in the programming world. 4. This book will not invest time on topics that are easily available e.g. how to install visual studio in your system or how to write a \"hello world' program etc. On the contrary, the book contains a section that provides some fundamental theories with some interesting questions/answers in the topics like-IL code, selection, iteration and jump statements, arrays, strings, structures, enumerations etc., so that, you can learn and evaluate your skills in those topics. This section will act like a reference. Gradually upon repeated practice, you will be familiar with it. This section will also help you to prepare yourself before a job interview or a semester examination to answer some tricky questions that may seem to be very easy at the beginning. Your teacher only expects that before you enter into the class, you must aware of the basic syntax's/notations. 5. In most of the cases, you'll see the complete programs with output snapshots (for different inputs) i.e. You do not need to wait to run a program to see the corresponding outputs. Programs were run both in windows 7 and 10 and snapshots are taken from visual studio community 2017 edition which is free (and latest) at the time of this writing. 6. Lastly, many of us are afraid of fat books because they do not show us the promise that we can learn it in one day or 7 days etc. but they forget that learning is a continuous process. Author also believes that no real mastery can be achieved in 24 hrs or in 7 days. So, the slogan of the book is \"To learn the core topics in C#, whatever efforts I need to put, I am OK with that.\" Still simple arithmetic says that if you can complete 2 topics per week, you can complete the book by 2 months . The book is designed for you in such a way that upon completion of the book, you will learn the core OOP concepts in C# in details how to go further.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1974321649"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781974321643"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 478,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=gRritAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=gRritAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=gRritAEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=6&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=gRritAEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Interactive_Object_Oriented_Programming.html?hl=&id=gRritAEACAAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=gRritAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Announcement-Thanks for your interest in Interactive Object-Oriented Programming in C# and making this book as &quot;No.1 New Release.&quot; You motivated us to do some further modification and fine-tune this work."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "O958swEACAAJ",
+   "etag": "P4k8LvJcplQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/O958swEACAAJ",
+   "volumeInfo": {
+    "title": "Wzorce projektowe",
+    "subtitle": "elementy oprogramowania obiektowego wielokrotnego użytku",
+    "authors": [
+     "Erich Gamma",
+     "Richard Helm",
+     "Ralph E. Johnson",
+     "John M. Vlissides"
+    ],
+    "publishedDate": "2017",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "8328333139"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9788328333130"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 375,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "language": "pl",
+    "previewLink": "http://books.google.pl/books?id=O958swEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=O958swEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Wzorce_projektowe.html?hl=&id=O958swEACAAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=O958swEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "STBBjwEACAAJ",
+   "etag": "NEr4Pt9HnX4",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/STBBjwEACAAJ",
+   "volumeInfo": {
+    "title": "C# Basics",
+    "subtitle": "Test Your Skill (Colored Edition)",
+    "authors": [
+     "Vaskaran Sarcar"
+    ],
+    "publisher": "Createspace Independent Publishing Platform",
+    "publishedDate": "2016-02-01",
+    "description": "This book is for those who believe that they have learned the fundamentals of C#. Before entering into a topic,author will provide you the basic theory first for your immediate reference and then he will introduce the questions for you.All of these questions will have their own significance. Some of them may seem to be very easy for you, some of them may seem to be very much challenging for you.But in all cases, when you will go through these questions and their respective answers, your knowledge will be either refreshed or enhanced .These knowledge will boost up your confidence level into a new height and at the same time , you will fall in love with this extremely powerful language.Some of these questions are like this: for the entry point of our program we need a Main method in our program-All C# programmers need to know this.Now the question is :Can we have multiple Main method in our program?If your answer is yes then how you will implement that.Take another simple question: We know,C# has many similarities with Java. So,can you point out some of the dissimilarities with it.Or value type and Reference Type are the two most fundamental concepts in this language and we claim class is a reference type and struct is a value type.But Can you prove that with their definitions? and many more questions like these.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1523795859"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781523795857"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 106,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=STBBjwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=STBBjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=STBBjwEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=8&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=STBBjwEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/C_Basics.html?hl=&id=STBBjwEACAAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=STBBjwEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "[Announcement: Thanks for your interest in C# Basics.A totally modified, updated and enlarged version of the book &quot;Interactive C#&quot; is about to be published.Author recommends this modified and enlarged version for you.]This book is for those ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "kbQFMQAACAAJ",
+   "etag": "9/IJMMPueaI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/kbQFMQAACAAJ",
+   "volumeInfo": {
+    "title": "Operating System",
+    "subtitle": "Computer Science Interview Series(1. 2 Edition)",
+    "authors": [
+     "Vaskaran Sarcar"
+    ],
+    "publisher": "Createspace Independent Publishing Platform",
+    "publishedDate": "2016-11-16",
+    "description": "We see big smiles on people's face after a big achievement. It is expressed as one kind of victory. There are many ways by which people can get those achievements. One of those ways is observed after clearing an interview. It is a \"dream comes true\" experience which was eagerly wanted by that person. But unfortunately, most of the time, we ensure the failure much before the interview begins by lack of preparation, some unknown fear and lack of our self-confidence. In last 10 years, I have always seen the same pattern. Thanks to my great teachers, my successful seniors and my true friends -through them I have got a simple key to solve these problems. In this book, I am going to share with you such a key to pass (my best wishes are with you) a Computer Science interview where Operating System (OS) can be your guide to crack that interview. On successful completion of the book, you can easily handle all the obstacles mentioned earlier. The simple key is: most of the time a true interviewer asks you the fundamental questions. He/she knows that anyone can develop a specialized knowledge if the basic fundamentals are clear to that interviewee. But unfortunately most of the time, a candidate spend most of his/her time on the tough questions -answers of which are not easy to remember if the foundation is weak. So, with this book, you will have an opportunity to check your fundamentals, to gain a high level of confidence .You will be able to remove some unknown fears before appearing such an interview. Author has made his best effort to answer these questions by his own knowledge and different reliable materials available in the market. But any kind of correction, improvements and feedback's are always welcome because only with those things a book can be truly completed.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "154042720X"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781540427205"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 102,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=kbQFMQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=kbQFMQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.pl/books?id=kbQFMQAACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=9&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=kbQFMQAACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Operating_System.html?hl=&id=kbQFMQAACAAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=kbQFMQAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "On successful completion of the book, you can easily handle all the obstacles mentioned earlier. And here is the key: most of the time a true interviewer asks you the fundamental questions."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "OKJyrgEACAAJ",
+   "etag": "8TS7thPzfQw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/OKJyrgEACAAJ",
+   "volumeInfo": {
+    "title": "Java receptury",
+    "subtitle": "kompendium wiedzy programisty!",
+    "authors": [
+     "Ian F. Darwin"
+    ],
+    "publishedDate": "2015",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "OCLC:905091911"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Application software"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "language": "pl",
+    "previewLink": "http://books.google.pl/books?id=OKJyrgEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&cd=10&source=gbs_api",
+    "infoLink": "http://books.google.pl/books?id=OKJyrgEACAAJ&dq=Java+Design+Patterns+by+Vaskaran+Sarcar&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Java_receptury.html?hl=&id=OKJyrgEACAAJ"
+   },
+   "saleInfo": {
+    "country": "PL",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "PL",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=OKJyrgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "H3Rozwi?zania i przyk?ady dla programistów u?ywaj?cych j?zyka Java/h3Java to jeden z j?zyków programowania najch?tniej wybieranych do tworzenia zaawansowanych systemów informatycznych."
+   }
+  }
+ ]
+}
